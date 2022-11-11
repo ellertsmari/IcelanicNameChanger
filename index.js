@@ -1,7 +1,7 @@
-import express, { application } from 'express';
-import men from './js/males.js';
-import women from './js/females.js';
-import checkName from './js/main.js';
+const express =  require('express');
+const men = require('./js/males.js');
+const women = require('./js/females.js');
+const checkName = require('./js/main.js');
 const app = express();
 
 app.get('/', (req, res) => {

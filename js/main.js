@@ -48,4 +48,4 @@ var checkName=function(name, names){
   return IceName;
 }
 
-export default checkName;
+module.exports = checkName;
