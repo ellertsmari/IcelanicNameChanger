@@ -18,5 +18,8 @@
     "url": "https://github.com/ellertsmari/Icename/issues"
   },
   "homepage": "https://github.com/ellertsmari/Icename#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
