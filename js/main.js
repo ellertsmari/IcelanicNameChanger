@@ -1,7 +1,8 @@
 var checkName=function(name, names){
   const capitalizeFirstLetter = (n)=> n.charAt(0).toUpperCase() + n.slice(1);
+  const originalName = name;
   name = name.toLowerCase();
-  console.log("upper name is: " + name);
+  console.log("name is: " + name);
   const map = {'a': 'á', 'd': 'ð', 'e': 'é', 'i': 'í', 'o': 'ó', 'u': 'ú', 'y': 'ý'};
 	
 
@@ -42,10 +43,10 @@ var checkName=function(name, names){
 	
   possibleNames.forEach(n=>{
     const N = capitalizeFirstLetter(n)
-    if (names.includes(N)) IceName = N
+    if (names.includes(N) && !IceName) IceName = N
   })
 	
-  return IceName;
+  return IceName || originalName;
 }
 
 module.exports = checkName;
